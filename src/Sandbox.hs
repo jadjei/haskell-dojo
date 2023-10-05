@@ -33,11 +33,9 @@ identity x = x
 -- Assign types to variables
 -- Types begin with Capital letters
 x :: Int
-
 x = -12
 
 y :: Char
-
 y = '£'
 
 -- function that returns whether an input is odd of even. Bool
@@ -51,3 +49,23 @@ c :: String
 c = ['h', 'a', 's', 'k', 'e', 'l', 'l']
 
 -- String is exactly the same as [Char] .. String is known as syntactic suger and is used a lot in Haskell
+
+-- Single quotes is for Char
+-- Double quotes are for Strings
+-- Lists must contain the same Types .. multiple items .. Square brackets
+-- Pair or Tuple can contain varying Types ..but only two .. Round brackets
+
+-- The following is not actually creating a new type .. this is just a synonym
+type Hat = (Int, Bool)
+
+bowler :: Hat
+bowler = (5, True)
+
+cravat :: Hat
+cravat = (3, False)
+
+-- lowercase = variable
+-- uppercase = Type
+-- 
+-- Typeclassses = Int, Char, Bool, String
+

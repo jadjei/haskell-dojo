@@ -69,3 +69,20 @@ cravat = (3, False)
 -- 
 -- Typeclassses = Int, Char, Bool, String
 
+-- Session 3
+-- a List is not an array. It is a 2 component thing.. head and tail
+-- (tail is the remaining body once head is isolated)
+-- use pattern matching to find 
+
+isSingleton :: [a] -> Bool
+isSingleton (_ : []) = True
+isSingleton _        = False
+
+-- HW write a 4 component pattern match and a 5 component pattern match
+a : b : c = "Pikachu" : ("Charmander" : ["Squirtle"])
+
+first :: [a] -> a
+first (h : _) = h
+
+second :: [a] -> a
+second (_ : (h : _)) = s

@@ -45,8 +45,8 @@ isEven :: Int -> Bool
 isEven x = mod x 2 == 0
 
 --c :: [Char]
-c :: String
-c = ['h', 'a', 's', 'k', 'e', 'l', 'l']
+--c :: String
+--c = ['h', 'a', 's', 'k', 'e', 'l', 'l']
 
 -- String is exactly the same as [Char] .. String is known as syntactic suger and is used a lot in Haskell
 
